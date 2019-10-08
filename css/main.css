@@ -1,0 +1,330 @@
+/****************************************************************************************
+
+                                    Google Fonts
+
+****************************************************************************************/
+
+@import url('https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=latin-ext');
+
+/****************************************************************************************
+
+                                    Global Styles
+
+****************************************************************************************/
+* {
+    box-sizing: border-box;
+}
+html, body {
+    height: 100%;
+}
+body {
+    margin: 0;
+    background-color: #ffffff;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 16px;
+    color: #1f1f1f;
+    line-height: 1.4; 
+    background-image: url('../grafike/bkg-pattern.png');
+}
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+    text-decoration: none;
+}
+a {
+    color: #ff9900;
+}
+a:hover {
+    color: #eb8a00;
+    text-decoration: none;
+}
+small {
+    font-size: 12px;
+}
+
+/****************************************************************************************
+
+                                        Layout
+
+****************************************************************************************/        
+
+.container {
+    max-width: 960px;
+    width: 100%;
+    margin: 0 auto;
+}
+.row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.col-1-2 {
+    max-width: 50%;
+    padding: 0 10px;
+}
+.col-1-3 {
+    width: 33.333%;
+    padding: 0 10px;
+}
+.col-2-3 {
+    width: 66.666%;
+    padding: 0 10px;
+}
+
+/****************************************************************************************
+
+                                    Specific Styles
+
+****************************************************************************************/     
+
+.main-header {
+    background-color: #333333;
+    padding: 30px 0;
+}
+#galery .main-header {
+    margin-bottom: 50px;
+}
+.logo {
+    margin: 0 0 0 10px;
+}
+.logo a {
+    background-image: url("../grafike/swd-logo.png");
+    width: 276px;
+    height: 50px;
+    display: block;
+    text-indent: -9999px;
+}
+nav {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+nav ul {
+    display: flex;
+}
+nav ul li {
+    border-right: 1px solid #fff;
+    padding: 2px 10px 0 10px;
+    line-height: 1;
+    
+}
+nav ul li:last-child {
+    border-right: none;
+}
+nav ul li a {
+    color: #fff;
+    font-size: 18px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+#home .home-link,
+#about .about-link,
+#galery .galery-link,
+#news .news-link,
+#contact .contact-link {
+    color: #f90;
+}
+.intro-section header {
+    position: relative;
+    line-height: 0;
+}
+.intro-section header img {
+    width: 100%;
+}
+.tagline {
+    color: #ffffff;
+    font-size: 40px;
+    text-align: right;
+    background-color: rgba(255, 153, 0, 0.9);
+    padding: 40px;
+    margin: 0;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    line-height: 1.2;
+}
+.intro-section article {
+    background-color: #333333;
+    border: 10px solid #fff;
+    color: #ccc;
+    padding: 35px 10px 25px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, .3);
+    position: relative;
+}
+.intro-icon {
+    background-color: #ff9900;
+    border: 10px solid #fff;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: -55px;
+    right: 10px;
+    transform: rotate(15deg);
+    -webkit-transform: rotate(15deg);
+}
+.intro-section article h3 {
+    color: #ffffff;
+    font-size: 24px;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+.intro-section article h3 span {
+    font-size: 32px;
+}
+.intro-section article p {
+    margin: 0;
+}
+.white-holder {
+    background-color: #ffffff;
+    padding: 25px 0;
+    box-shadow: 0, 0, 5px, rgba(0, 0, 0, .3);
+}
+.latest-news {
+    font-size: 18px;
+}
+.latest-news header {
+    padding: 0 10px;
+}
+.latest-news h2 {
+    font-size: 30px;
+    margin: 0;
+}
+.date {
+    color: #999999;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: .4px;
+    margin-bottom: 15px;
+    display: block;
+}
+.img-link {
+    background-color: #f5f5f5;
+    padding: 10px;
+    display: block;
+    line-height: 0;
+}
+.margin-center {
+    margin: 0 auto;
+}
+.latest-news p {
+    margin-top: 6px;
+}
+.read-more {
+    font-size: 16px;
+    border: 1px solid #f90;
+    border-radius: 5px;
+    text-decoration: none;
+    width: 140px;
+    height: 40px;
+    display: block;
+    text-align: center;
+    line-height: 38px;
+    margin: 30px auto 0;
+    transition: all .5s;
+}
+.read-more:hover {
+    background-color: #ff9900;
+    color: #ffffff;
+}
+.main-footer {
+background: #000000; /* Old browsers */
+background: -moz-linear-gradient(top,  #000000 0%, #333333 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  #000000 0%,#333333 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  #000000 0%,#333333 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#333333',GradientType=0 ); /* IE6-9 */
+color: #ffffff;
+padding: 50px 0;
+margin-top: 70px;
+position: relative;
+}
+.soc-net {
+    display: flex;
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+}
+.soc-net li {
+    margin-right: 10px;
+}
+.soc-net:last-child {
+    margin-right: 0;
+}
+.soc-net li a {
+    width: 60px;
+    height: 60px;
+    display: block;
+    border-radius: 50%;
+    border: 10px solid #fff;
+    background-image: url("../grafike/soc-net-sprite.png");
+    text-indent: -9999px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, .3);
+    transition: background-position .3s;
+}
+.facebook {
+    background-color: #3c5a98;
+}
+.facebook:hover {
+    background-position: 0 -40px;
+}
+.twitter {
+    background-color: #00adee;
+    background-position: -40px 0;
+}
+.twitter:hover {
+    background-position: -40px -40px;
+}
+.linked-in {
+    background-color: #006699;
+    background-position: -80px 0;
+}
+.linked-in:hover {
+    background-position: -80px -40px;
+}
+.google-plus {
+    background-color: #d84937;
+    background-position: -120px 0;
+}
+.google-plus:hover {
+    background-position: -120px -40px;
+}
+.main-footer p {
+    margin: 0;
+    line-height: 1.2;
+}
+/****************************************************************************************
+
+                                    Helper Classes
+
+****************************************************************************************/     
+
+
+.list-reset {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+@media screen and (max-width: 992px) {
+    .tagline {
+        font-size: 30px;
+        padding: 25px;
+    }
+    .intro-section header img {
+        min-height: 200px;
+    }
+  }
+@media screen and (max-width: 768px) {
+    .tagline {
+        font-size: 25px;
+        padding: 10px;
+    }
+  }
+  @media screen and (max-width: 600px) {
+    nav ul li a {
+        font-size: 15px;
+    }
+  }
+  
